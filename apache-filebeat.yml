@@ -6,7 +6,7 @@ filebeat:
         - /var/log/apache2/access.log
       fields:
         logzio_codec: plain
-        token: {{LOGZIO-TOKEN}}
+        token: LOGZIO-TOKEN
       fields_under_root: true
       ignore_older: 24h
       document_type: apache_access
@@ -15,7 +15,7 @@ filebeat:
         - /var/log/apache2/error.log
       fields:
         logzio_codec: plain
-        token: {{LOGZIO-TOKEN}}
+        token: LOGZIO-TOKEN
       fields_under_root: true
       ignore_older: 24h
       document_type: apache_error
